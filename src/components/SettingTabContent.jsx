@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import TabAccordion from "./TabAccordion";
 import ToggleSwitch from "./ToggleSwitch";
+import { HiUser } from "react-icons/hi2";
 
-const SharedDashboardAccordions = () => {
+const SettingTabContent = () => {
   const [menuBtn, setMenuBtn] = useState(true);
   const [exportBtn, setExportBtn] = useState(false);
 
@@ -49,10 +50,10 @@ const SharedDashboardAccordions = () => {
       title: "Anyone (Public) With an Access Code",
       content: (
         <input
-              type="text"
-              placeholder="Insert Access Code"
-              className="border border-gray-400 rounded-sm w-full p-1 px-2"
-            />
+          type="text"
+          placeholder="Insert Access Code"
+          className="border border-gray-400 rounded-sm w-full p-1 px-2"
+        />
       ),
     },
 
@@ -78,15 +79,13 @@ const SharedDashboardAccordions = () => {
 
   return (
     <>
-     <div className="pb-3 mb-3 border-b border-gray-400">
-        <h5 className="font-semibold text-black mb-2">
-          Dashboard Title
-        </h5>
+      <div className="pb-3 mb-3 border-b border-gray-400">
+        <h5 className="font-semibold text-black mb-2">Dashboard Title</h5>
         <input
-              type="text"
-              placeholder="Default dashboard"
-              className="border border-gray-400 rounded-sm w-full p-1 px-2"
-            />
+          type="text"
+          placeholder="Default dashboard"
+          className="border border-gray-400 rounded-sm w-full p-1 px-2"
+        />
       </div>
       <TabAccordion items={accordionItems} />
       <div className="mb-2">
@@ -98,8 +97,18 @@ const SharedDashboardAccordions = () => {
         </span>
       </div>
       <TabAccordion items={linkPermission} />
+
+      <div className="w-full bg-[#0052CC] text-white p-2 rounded-md flex items-center mt-4 space-x-3 cursor-pointer">
+        <div className="w-4 h-4 rounded-full border-2 border-white"></div>
+
+        <HiUser className="text-white text-md" />
+
+        <span className="text-sm font-medium">
+          Only users with access to this Jira dashboard
+        </span>
+      </div>
     </>
   );
 };
 
-export default SharedDashboardAccordions;
+export default SettingTabContent;

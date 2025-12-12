@@ -9,7 +9,7 @@ const SettingsTabBar = ({ activeTab, onTabChange, title, tabs }) => {
             {title || "Default dashboard"}
           </h1>
 
-          <div className="flex space-x-2 p-1">
+          <div className="flex flex-wrap space-x-2 p-1">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;

@@ -3,9 +3,8 @@ import CustomHeader from "../components/CustomHeader";
 import DynamicTabs from "../components/DynamicTabs";
 import FieldBuilderSection from "../components/FieldBuilderSection";
 import DashboardSettings from "../components/DashboardSettings";
+import { DescriptionsTabContent } from "../components/DescriptionTabContent";
 import {
-  // FieldBuilderSection,
-  DescriptionsContent,
   ImportExportContent,
   PlaceholderContent,
 } from "../components/ContentComponents";
@@ -26,7 +25,7 @@ export default function SimpleSearch() {
 
   const TAB_CONTENTS = {
     settings: <FieldBuilderSection />,
-    descriptions: <DescriptionsContent />,
+    descriptions: <DescriptionsTabContent />,
     import_export: <ImportExportContent />,
     monitor: <PlaceholderContent tabName="Monitor View" />,
     help: <PlaceholderContent tabName="Help" />,

@@ -2,8 +2,6 @@ import CustomHeader from "../components/CustomHeader";
 import DashboardConfig from "../components/DashboardConfig";
 import DashboardSettings from "../components/DashboardSettings";
 import {
-  SettingContent,
-  DescriptionsContent,
   ImportExportContent,
   PlaceholderContent,
 } from "../components/ContentComponents";
@@ -14,8 +12,9 @@ import {
   BsQuestionCircle,
 } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
-import SharedDashboardAccordions from "../components/SharedDashboardAccordions";
+import SettingTabContent from "../components/SettingTabContent";
 import SaveGadget from "../components/SaveGadget";
+import { DescriptionsTabContent } from "../components/DescriptionTabContent";
 
 export default function SharedDashboard() {
   const TAB_LIST = [
@@ -27,8 +26,8 @@ export default function SharedDashboard() {
   ];
 
   const TAB_CONTENTS = {
-    settings: <SharedDashboardAccordions />,
-    descriptions: <DescriptionsContent />,
+    settings: <SettingTabContent />,
+    descriptions: <DescriptionsTabContent />,
     import_export: <ImportExportContent />,
     monitor: <PlaceholderContent tabName="Monitor View" />,
     help: <PlaceholderContent tabName="Help" />,

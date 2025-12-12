@@ -1,27 +1,5 @@
 import React from 'react';
 
-export const SettingContent = () => (
-  <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
-    <h2 className="text-lg font-semibold mb-4">Dashboard Settings</h2>
-    <p>... Content matching the "Setting" screenshot (Dashboard Title, Shared Dashboard Settings, Link Access Permissions) would go here ...</p>
-    <div className="mt-4 p-3 bg-gray-100 rounded text-sm">
-      <p>This panel shows configuration options for the dashboard access and export permissions.</p>
-    </div>
-  </div>
-);
-
-
-export const DescriptionsContent = () => (
-  <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
-    <h2 className="text-lg font-semibold mb-4">Descriptions</h2>
-    <div className="h-32 border border-gray-300 p-2 rounded mb-4">
-        <p className="text-gray-500">Add a description... (Rich Text Editor would be here)</p>
-    </div>
-    <h3 className="text-md font-medium mt-6 mb-2">Description Options</h3>
-    <p>... Content matching the "Description Options" screenshot would go here ...</p>
-  </div>
-);
-
 export const ImportExportContent = () => (
   <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
     <h2 className="text-lg font-semibold mb-4">Import/Export Configuration</h2>
