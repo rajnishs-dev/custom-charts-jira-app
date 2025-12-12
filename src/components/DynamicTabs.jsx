@@ -30,7 +30,7 @@ export default function DynamicTabs() {
   };
 
   return (
-    <div className="w-full px-4 py-2">
+    <div className="w-full py-2">
       {/* ---------------------- TABS HEADER ---------------------- */}
 
       <div className="flex items-center gap-2 flex-wrap py-2 bg-white rounded-xs">

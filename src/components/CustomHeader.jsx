@@ -3,7 +3,7 @@ import { MdOutlineViewColumn } from "react-icons/md";
 
 export default function CustomHeader({ title }) {
   return (
-    <div className="w-full flex items-center justify-between py-4 px-2 flex-wrap gap-3">
+    <div className="w-full flex items-center justify-between py-4 flex-wrap gap-3">
       {/* Title */}
       <h1 className="text-2xl font-semibold text-gray-900">{title}</h1>
 

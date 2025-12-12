@@ -37,7 +37,7 @@ export default function SimpleSearch() {
       <CustomHeader title="Custom Charts Simple Search" />
       <ChartForm />
       <DynamicTabs />
-      <div className="flex px-4 pb-4">
+      <div className="flex pb-4">
         <MainSearchPannel />
         <div className="w-full md:w-3/10 mt-4 md:mt-0">
           <DashboardSettings tabs={TAB_LIST} contents={TAB_CONTENTS} />
