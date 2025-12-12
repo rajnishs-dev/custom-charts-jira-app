@@ -8,7 +8,7 @@ export const ImportExportTabContent = () => {
   <div className="">    
     <div className="pb-4 border-b border-gray-300">
         <h3 className="text-md font-medium mb-3">Export Shared Dashboard Configuration</h3>
-        <button className="flex items-center px-3 py-2 text-sm font-medium bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-150">
+        <button className="flex items-center px-3 py-2 text-sm font-medium cursor-pointer bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition duration-150">
             Copy to Clipboard <FiCopy className="ml-2" />
         </button> 
     </div>
@@ -23,7 +23,7 @@ export const ImportExportTabContent = () => {
         />
         </div>
         <div className="flex justify-end">
-            <button className="flex items-center px-4 py-2 bg-gray-300 text-gray-600 font-medium text-sm rounded cursor-not-allowed">
+            <button className="flex items-center px-4 py-2 bg-gray-300 text-gray-600 font-medium text-sm rounded cursor-pointer">
                 <BsDownload className="mr-2" />
                 Import Configurations
             </button>

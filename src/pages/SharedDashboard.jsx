@@ -37,11 +37,11 @@ export default function SharedDashboard() {
     <>
       <CustomHeader title="Custom Charts Shared Dashboard" />
       <div className="flex flex-wrap">
-        <div className="w-full md:w-2/3 md:pr-4">
+        <div className="w-full lg:w-2/3 md:w-1/2 md:pr-4">
           <DashboardConfig />
         </div>
 
-        <div className="w-full md:w-1/3">
+        <div className="w-full lg:w-1/3 md:w-1/2">
           <div className="my-4">
             <DashboardSettings tabs={TAB_LIST} contents={TAB_CONTENTS} />
           </div>
