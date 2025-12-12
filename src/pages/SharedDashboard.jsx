@@ -42,7 +42,9 @@ export default function SharedDashboard() {
         </div>
 
         <div className="w-full md:w-1/3 mt-4 md:mt-0">
-          <DashboardSettings tabs={TAB_LIST} contents={TAB_CONTENTS} />
+          <div className="mt-4 lg:mt-6">
+            <DashboardSettings tabs={TAB_LIST} contents={TAB_CONTENTS} />
+          </div>
         </div>
       </div>
     </>

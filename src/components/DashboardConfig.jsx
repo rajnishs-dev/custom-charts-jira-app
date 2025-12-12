@@ -115,7 +115,7 @@ const DashboardConfig = () => {
   const foundChartsCount = 4;
   
   return (
-    <div className="border border-gray-300 rounded-md p-4 my-4 lg:my-6">
+    <div className="border border-gray-300 rounded-xs p-4 my-4 lg:my-6">
       <div className="flex justify-between items-center pb-4">
         <h1 className="text-xl font-semibold text-gray-900">Default dashboard</h1>
         <div className="flex space-x-2 rounded-md p-1">
