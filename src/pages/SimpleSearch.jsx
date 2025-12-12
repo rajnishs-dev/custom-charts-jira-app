@@ -9,19 +9,18 @@ import {
   ImportExportContent,
   PlaceholderContent,
 } from "../components/ContentComponents";
-import { BsDownload } from "react-icons/bs";
+import { BsFileText, BsDownload } from "react-icons/bs";
 import { MdSearch } from "react-icons/md";
-import { FiFileText, FiMessageCircle } from "react-icons/fi";
 import MainSearchPannel from "../components/MainSearchPannel";
 import SaveGadget from "../components/SaveGadget";
+import { FiGrid } from "react-icons/fi";
 
 export default function SimpleSearch() {
   const TAB_LIST = [
     { id: "settings", icon: MdSearch, tooltip: "Simple Search Fields" },
-    { id: "monitor", icon: FiFileText, tooltip: "Monitor View" },
-    { id: "descriptions", icon: FiMessageCircle, tooltip: "Descriptions" },
+    { id: "monitor", icon: FiGrid, tooltip: "Display Option" },
+    { id: "descriptions", icon: BsFileText, tooltip: "Descriptions" },
     { id: "import_export", icon: BsDownload, tooltip: "Import/Export" },
-    // { id: "help", icon: BsQuestionCircle, tooltip: "Help" },
   ];
 
   const TAB_CONTENTS = {

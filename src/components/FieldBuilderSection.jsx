@@ -1,6 +1,7 @@
 import { FiTrash2, FiEdit2, FiChevronDown } from "react-icons/fi";
 import { RxDragHandleDots2 } from "react-icons/rx";
 import { FiUsers } from "react-icons/fi";
+import { FaUserCog } from "react-icons/fa";
 
 export default function FieldBuilderSection() {
   const fields = [
@@ -98,13 +99,13 @@ export default function FieldBuilderSection() {
       <hr className="my-2 text-gray-200" />
 
       {/* Add Another Field */}
-      <div className="flex justify-between items-center text-sm">
+      <div className="flex justify-between items-center text-md">
         <button className="cursor-pointer flex items-center gap-1">
           + Add Another Field
         </button>
 
         <button className="cursor-pointer text-blue-700 flex items-center gap-1">
-          <FiUsers size={16} />
+          <FaUserCog className="w-4 h-4" />
           Admin Setting
         </button>
       </div>

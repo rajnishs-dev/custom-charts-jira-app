@@ -49,10 +49,10 @@ const SharedDashboardAccordions = () => {
       title: "Anyone (Public) With an Access Code",
       content: (
         <input
-              type="text"
-              placeholder="Insert Access Code"
-              className="border border-gray-400 rounded-sm w-full p-1 px-2"
-            />
+          type="text"
+          placeholder="Insert Access Code"
+          className="border border-gray-400 rounded-sm w-full p-1 px-2"
+        />
       ),
     },
 
@@ -78,15 +78,13 @@ const SharedDashboardAccordions = () => {
 
   return (
     <>
-     <div className="pb-3 mb-3 border-b border-gray-400">
-        <h5 className="font-semibold text-black mb-2">
-          Dashboard Title
-        </h5>
+      <div className="pb-3 mb-3 border-b border-gray-400">
+        <h5 className="font-semibold text-black mb-2">Dashboard Title</h5>
         <input
-              type="text"
-              placeholder="Default dashboard"
-              className="border border-gray-400 rounded-sm w-full p-1 px-2"
-            />
+          type="text"
+          placeholder="Default dashboard"
+          className="border border-gray-400 rounded-sm w-full p-1 px-2"
+        />
       </div>
       <TabAccordion items={accordionItems} />
       <div className="mb-2">

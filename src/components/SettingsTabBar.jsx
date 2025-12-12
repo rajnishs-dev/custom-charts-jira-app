@@ -20,9 +20,10 @@ const SettingsTabBar = ({ activeTab, onTabChange, title, tabs }) => {
                     onClick={() => onTabChange(tab.id)}
                     className={`
                       p-1 rounded transition-colors duration-150 cursor-pointer flex items-center justify-center
-                      ${isActive 
-                        ? 'bg-blue-600 text-white shadow-md' 
-                        : 'hover:bg-gray-200 text-gray-600'
+                      ${
+                        isActive
+                          ? "bg-blue-600 text-white shadow-md"
+                          : "hover:bg-gray-200 text-gray-600"
                       }`}
                     title={tab.tooltip}
                   >
