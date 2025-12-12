@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
 const TabAccordion = ({ items }) => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
