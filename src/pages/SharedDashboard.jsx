@@ -14,6 +14,7 @@ import {
   BsQuestionCircle,
 } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
+import SharedDashboardAccordions from "../components/SharedDashboardAccordions";
 
 export default function SharedDashboard() {
   const TAB_LIST = [
@@ -25,7 +26,7 @@ export default function SharedDashboard() {
   ];
 
   const TAB_CONTENTS = {
-    settings: <SettingContent />,
+    settings: <SharedDashboardAccordions />,
     descriptions: <DescriptionsContent />,
     import_export: <ImportExportContent />,
     monitor: <PlaceholderContent tabName="Monitor View" />,
@@ -36,10 +37,11 @@ export default function SharedDashboard() {
     <>
       <CustomHeader title="Custom Charts Shared Dashboard" />
       <div className="flex ">
-        <div className="w-full md:w-7/10 md:pr-4">
+        <div className="w-full md:w-2/3 md:pr-4">
           <DashboardConfig />
         </div>
-        <div className="w-full md:w-3/10 mt-4 md:mt-0">
+
+        <div className="w-full md:w-1/3 mt-4 md:mt-0">
           <DashboardSettings tabs={TAB_LIST} contents={TAB_CONTENTS} />
         </div>
       </div>

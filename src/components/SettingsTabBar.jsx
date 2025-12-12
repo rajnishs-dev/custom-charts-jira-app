@@ -4,7 +4,7 @@ const SettingsTabBar = ({ activeTab, onTabChange, title, tabs }) => {
   return (
     <div>
       <div className="p-4">
-        <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+        <div className="flex justify-between items-center border-b border-gray-400 pb-2">
           
           <h1 className="text-xl font-semibold text-blue-600">
             {title || 'Default dashboard'}
@@ -21,7 +21,7 @@ const SettingsTabBar = ({ activeTab, onTabChange, title, tabs }) => {
                   <button
                     onClick={() => onTabChange(tab.id)}
                     className={`
-                      p-1 rounded transition-colors duration-150 flex items-center justify-center
+                      p-1 rounded transition-colors duration-150 cursor-pointer flex items-center justify-center
                       ${isActive 
                         ? 'bg-blue-600 text-white shadow-md' 
                         : 'hover:bg-gray-200 text-gray-600'

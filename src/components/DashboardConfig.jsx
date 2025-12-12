@@ -166,7 +166,7 @@ const DashboardConfig = () => {
         <div className="text-center mt-6">
           <button
             onClick={handleAddGadget}
-            className="flex items-center justify-center mx-auto px-6 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-[#0052CC] hover:bg-blue-700 cursor-pointer transition duration-150 ease-in-out"
+            className="flex items-center justify-center mx-auto px-4 py-1 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-[#0052CC] hover:bg-blue-800 cursor-pointer transition duration-150 ease-in-out"
           >
             <PlusIcon /> Add Gadgets
           </button>
