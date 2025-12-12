@@ -15,6 +15,7 @@ import {
 } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
 import SharedDashboardAccordions from "../components/SharedDashboardAccordions";
+import SaveGadget from "../components/SaveGadget";
 
 export default function SharedDashboard() {
   const TAB_LIST = [
@@ -36,17 +37,18 @@ export default function SharedDashboard() {
   return (
     <>
       <CustomHeader title="Custom Charts Shared Dashboard" />
-      <div className="flex ">
+      <div className="flex flex-wrap">
         <div className="w-full md:w-2/3 md:pr-4">
           <DashboardConfig />
         </div>
 
-        <div className="w-full md:w-1/3 mt-4 md:mt-0">
-          <div className="mt-4 lg:mt-6">
+        <div className="w-full md:w-1/3">
+          <div className="my-4">
             <DashboardSettings tabs={TAB_LIST} contents={TAB_CONTENTS} />
           </div>
         </div>
       </div>
+      <SaveGadget />
     </>
   );
 }
