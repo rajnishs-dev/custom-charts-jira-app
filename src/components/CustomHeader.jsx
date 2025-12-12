@@ -10,22 +10,22 @@ export default function CustomHeader({ title }) {
       {/* Right Icons Section */}
       <div className="flex items-center gap-3">
         {/* Fullscreen Icon */}
-        <button className="p-2 rounded-md bg-gray-100 hover:bg-gray-200 border border-gray-200">
+        <button className="p-2 rounded-xs bg-gray-100 hover:bg-gray-200 border border-gray-200">
           <FiMaximize className="text-gray-700 text-lg" />
         </button>
 
         {/* Columns / Layout Icon */}
-        <button className="p-2 rounded-md hover:bg-gray-100">
+        <button className="p-2 rounded-xs hover:bg-gray-100">
           <MdOutlineViewColumn className="text-gray-700 text-xl" />
         </button>
 
         {/* Refresh Icon */}
-        <button className="p-2 rounded-md hover:bg-gray-100">
+        <button className="p-2 rounded-xs hover:bg-gray-100">
           <FiRefreshCw className="text-gray-700 text-lg" />
         </button>
 
         {/* Link Icon */}
-        <button className="p-2 rounded-md hover:bg-gray-100">
+        <button className="p-2 rounded-xs hover:bg-gray-100">
           <FiLink className="text-gray-700 text-lg" />
         </button>
       </div>

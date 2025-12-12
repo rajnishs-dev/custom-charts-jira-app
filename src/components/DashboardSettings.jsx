@@ -12,7 +12,7 @@ const DashboardSettings = ({ tabs, contents }) => {
 
   return (
     <>
-    <div className="border border-gray-300 rounded-md my-4 lg:my-6 mb-2">
+    <div className="border border-gray-300 rounded-xs ">
       <SettingsTabBar
         activeTab={activeTab}
         onTabChange={setActiveTab}
