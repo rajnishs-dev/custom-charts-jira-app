@@ -4,7 +4,7 @@ const SettingsTabBar = ({ activeTab, onTabChange, title, tabs }) => {
   return (
     <div>
       <div className="p-4">
-        <div className="flex justify-between items-center border-b border-gray-200 pb-2">
+        <div className="flex justify-between items-center border-b border-gray-300 pb-2">
           <h1 className="text-md font-semibold text-[#0052CC]">
             {title || "Default dashboard"}
           </h1>
