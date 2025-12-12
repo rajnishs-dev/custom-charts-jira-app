@@ -13,6 +13,7 @@ import { BsDownload } from "react-icons/bs";
 import { MdSearch } from "react-icons/md";
 import { FiFileText, FiMessageCircle } from "react-icons/fi";
 import MainSearchPannel from "../components/MainSearchPannel";
+import SaveGadget from "../components/SaveGadget";
 
 export default function SimpleSearch() {
   const TAB_LIST = [
@@ -42,6 +43,7 @@ export default function SimpleSearch() {
           <DashboardSettings tabs={TAB_LIST} contents={TAB_CONTENTS} />
         </div>
       </div>
+      <SaveGadget />
     </>
   );
 }
