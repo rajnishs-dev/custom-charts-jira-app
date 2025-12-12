@@ -11,10 +11,7 @@ const TabAccordion = ({ items }) => {
   return (
     <div className="space-y-4">
       {items.map((item, index) => (
-        <div 
-          key={index} 
-          className="border border-gray-300 rounded-md"
-        >
+        <div key={index} className="border border-gray-300 rounded-md">
           <button
             className="w-full flex justify-between items-center p-2 px-3 text-left"
             onClick={() => toggle(index)}
@@ -28,9 +25,7 @@ const TabAccordion = ({ items }) => {
             />
           </button>
           {openIndex === index && (
-            <div className="px-3 pb-3 pt-1 text-gray-500">
-              {item.content}
-            </div>
+            <div className="px-3 pb-3 pt-1 text-gray-500">{item.content}</div>
           )}
         </div>
       ))}
