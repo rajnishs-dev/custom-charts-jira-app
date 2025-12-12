@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TabAccordion from "./TabAccordion";
 import ToggleSwitch from "./ToggleSwitch";
 import { HiUser } from "react-icons/hi2";
+import { FaUserCog } from "react-icons/fa";
 
 const SettingTabContent = () => {
   const [menuBtn, setMenuBtn] = useState(true);
@@ -106,6 +107,22 @@ const SettingTabContent = () => {
         <span className="text-sm font-medium">
           Only users with access to this Jira dashboard
         </span>
+      </div>
+      <div className="mt-4">
+        <a
+          href="/"
+          className="
+        flex items-center justify-end space-x-1.5 
+        text-blue-600 hover:text-blue-800 
+        font-medium border-t border-gray-400
+        transition-colors duration-200 
+        py-4 pb-0
+      "
+        >
+          <FaUserCog className="w-5 h-5" />
+
+          <span>Admin Setting</span>
+        </a>
       </div>
     </>
   );
