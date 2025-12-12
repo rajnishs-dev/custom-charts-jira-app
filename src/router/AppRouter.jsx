@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import SharedDashboard from "../pages/SharedDashboard";
-import SimpleSearch from "../pages/SimpleSearch";
+import SimpleSearch from "../pages/SimpleSearch.jsx";
 
 function AppRouter() {
   return (

@@ -30,7 +30,7 @@ export default function DynamicTabs() {
   };
 
   return (
-    <div className="w-full min-h-screen px-4 py-2">
+    <div className="w-full px-4 py-2">
       {/* ---------------------- TABS HEADER ---------------------- */}
 
       <div className="flex items-center gap-2 flex-wrap py-2 bg-white rounded-xs">
@@ -72,93 +72,10 @@ export default function DynamicTabs() {
         {/* ADD NEW TAB BUTTON */}
         <button
           onClick={addTab}
-          className="bg-blue-600 text-white rounded-xs p-2 hover:bg-blue-700"
+          className="bg-blue-700 text-white rounded-xs p-2 hover:bg-blue-600"
         >
           <AiOutlinePlus size={17} />
         </button>
-      </div>
-
-      {/* ---------------------- MAIN SEARCH PANEL ---------------------- */}
-      <div className="mt-2 bg-white border border-gray-300  rounded-xs p-3">
-        <h2 className="text-lg font-semibold mb-4">Simple Search</h2>
-
-        {/* TOP FILTER ROW */}
-        <div className="flex items-center gap-3 flex-wrap">
-          {/* Filter Icon */}
-          <button className="border px-3 py-1.5 rounded-xs hover:bg-gray-100 border-gray-300 bg-gray-100">
-            <FiFilter size={18} />
-          </button>
-
-          {/* Dropdowns */}
-          <select className="border px-3 py-1 rounded-xs border-gray-300 bg-gray-100">
-            <option>Project All</option>
-          </select>
-
-          <select className="border px-3 py-1 rounded-xs border-gray-300 bg-gray-100">
-            <option>Status All</option>
-          </select>
-
-          <input
-            type="text"
-            placeholder="Contains Text..."
-            className="border px-3 py-1 rounded-xs min-w-[200px] border-gray-300 placeholder-gray-900 bg-gray-100"
-          />
-
-          {/* Sort Button */}
-          <button className="border p-2 rounded-xs hover:bg-gray-100 border-gray-300 bg-gray-100">
-            <AiOutlineDown size={18} />
-          </button>
-
-          {/* Add Button */}
-          <button className="border p-2 rounded-xs hover:bg-gray-100 border-gray-300 bg-gray-100">
-            <AiOutlinePlus size={18} />
-          </button>
-
-          {/* Search Button */}
-          <button className="bg-blue-600 text-white px-5 py-1.5 rounded-xs hover:bg-blue-700">
-            Search
-          </button>
-
-          {/* More Options */}
-          <button className="border p-2 rounded-xs hover:bg-gray-100 border-gray-300 ml-auto">
-            <FiMoreVertical size={20} />
-          </button>
-        </div>
-
-        {/* RESULTS FOOTER */}
-        <div className="justify-between mt-40 py-4">
-          <p className="text-blue-600 text-xs font-medium mb-2 flex items-center gap-1">
-            <AiOutlineCheckCircle size={16} className="text-green-600" />
-            91 Issues found
-          </p>
-
-          <div className="flex gap-20">
-            <div className="w-full text-sm border border-gray-300 rounded-xs p-2">
-              <p className="border-b border-[#d6d6d6] pb-[10px]">
-                <span className="text-blue-600 font-medium">Source:</span>{" "}
-                project IN ("DM","DEV")
-              </p>
-
-              <p className="mt-2">
-                <span className="text-blue-600 font-medium">Selections:</span>
-              </p>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <button className="border p-2 rounded-xs hover:bg-gray-100 border-gray-300">
-                <FiEdit2 size={16} />
-              </button>
-
-              <button className="border p-2 rounded-xs hover:bg-gray-100 border-gray-300">
-                <FiFolder size={16} />
-              </button>
-
-              <button className="border p-2 rounded-xs hover:bg-gray-100 border-gray-300">
-                <FiEye size={16} />
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
