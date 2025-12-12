@@ -5,7 +5,6 @@ import FieldBuilderSection from "../components/FieldBuilderSection";
 import DashboardSettings from "../components/DashboardSettings";
 import { DescriptionsTabContent } from "../components/DescriptionTabContent";
 import {
-  ImportExportContent,
   PlaceholderContent,
 } from "../components/ContentComponents";
 import { BsFileText, BsDownload } from "react-icons/bs";
@@ -13,6 +12,7 @@ import { MdSearch } from "react-icons/md";
 import MainSearchPannel from "../components/MainSearchPannel";
 import SaveGadget from "../components/SaveGadget";
 import { FiGrid } from "react-icons/fi";
+import { ImportExportTabContent } from "../components/ImportExportTabContent";
 
 export default function SimpleSearch() {
   const TAB_LIST = [
@@ -25,7 +25,7 @@ export default function SimpleSearch() {
   const TAB_CONTENTS = {
     settings: <FieldBuilderSection />,
     descriptions: <DescriptionsTabContent />,
-    import_export: <ImportExportContent />,
+    import_export: <ImportExportTabContent />,
     monitor: <PlaceholderContent tabName="Monitor View" />,
     help: <PlaceholderContent tabName="Help" />,
   };
