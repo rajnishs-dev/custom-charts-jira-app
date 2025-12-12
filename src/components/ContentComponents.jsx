@@ -1,8 +1,5 @@
 import React from 'react';
 
-// --- Content Components ---
-
-// Content for image_45f578
 export const SettingContent = () => (
   <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
     <h2 className="text-lg font-semibold mb-4">Dashboard Settings</h2>
@@ -13,7 +10,7 @@ export const SettingContent = () => (
   </div>
 );
 
-// Content for image_45f537
+
 export const DescriptionsContent = () => (
   <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
     <h2 className="text-lg font-semibold mb-4">Descriptions</h2>
@@ -25,7 +22,6 @@ export const DescriptionsContent = () => (
   </div>
 );
 
-// Content for image_45f4ff
 export const ImportExportContent = () => (
   <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
     <h2 className="text-lg font-semibold mb-4">Import/Export Configuration</h2>
@@ -53,7 +49,6 @@ export const ImportExportContent = () => (
   </div>
 );
 
-// Content for default/placeholder tabs
 export const PlaceholderContent = ({ tabName }) => (
     <div className="p-6 text-center bg-white border border-gray-200 rounded-lg shadow-md">
         <h2 className="text-xl font-bold text-gray-700">Content for "{tabName}"</h2>
