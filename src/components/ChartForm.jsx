@@ -2,7 +2,7 @@ import { FiCheckCircle } from "react-icons/fi";
 
 export default function ChartForm() {
   return (
-    <div className="w-full bg-white px-4">
+    <div className="w-full bg-white">
       {/* GRID WRAPPER */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         {/* Reference ID */}
