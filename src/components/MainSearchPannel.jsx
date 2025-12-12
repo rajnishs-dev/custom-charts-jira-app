@@ -12,7 +12,7 @@ function MainSearchPannel() {
   return (
     <>
       {/* ---------------------- MAIN SEARCH PANEL ---------------------- */}
-      <div className="md:w-7/10 md:mr-4 bg-white border border-gray-300  rounded-xs p-4 flex flex-col">
+      <div className="bg-white border border-gray-300  rounded-xs p-4 flex flex-col h-full">
         <h2 className="text-lg font-semibold mb-4">Simple Search</h2>
 
         <div className="flex flex-col h-full">

@@ -1,7 +1,8 @@
+import React from "react";
 import { FiTrash2, FiEdit2, FiChevronDown } from "react-icons/fi";
 import { RxDragHandleDots2 } from "react-icons/rx";
-import { FiUsers } from "react-icons/fi";
 import { FaUserCog } from "react-icons/fa";
+import { BiGridVertical } from "react-icons/bi";
 
 export default function FieldBuilderSection() {
   const fields = [
@@ -16,9 +17,9 @@ export default function FieldBuilderSection() {
 
   return (
     <div className="w-full">
-      {/* Top Buttons */}
+      {/* TOP BUTTONS */}
       <div className="flex flex-wrap gap-3 mb-5">
-        <button className="text-xs  bg-blue-700 text-white px-2 py-1.5 rounded-xs hover:bg-blue-600">
+        <button className="text-xs bg-blue-700 text-white px-2 py-1.5 rounded-xs hover:bg-blue-600">
           + Add Jira Fields
         </button>
 
@@ -26,71 +27,77 @@ export default function FieldBuilderSection() {
           + Custom JQL Toggle
         </button>
 
-        <button className="text-xs px-2 py-1.5 rounde-xs border border-green-300 hover:bg-green-50">
+        <button className="text-xs px-2 py-1.5 rounded-xs border border-green-300 hover:bg-green-50">
           + Saved Filter Toggle
         </button>
       </div>
 
       <hr className="my-4 text-gray-200" />
 
-      {/* Fields List */}
+      {/* FIELD LIST */}
       <div className="flex flex-col gap-3 pb-4">
         {fields.map((f, i) => (
-          <div
-            key={i}
-            className={` flex items-center gap-3 bg-white shadow-sm border border-gray-300 rounded-xs px-3 py-2 text-sm  ${
-              f.highlight ? "bg-blue-50" : ""
-            }`}
-          >
-            {/* Drag Icon */}
-            <RxDragHandleDots2 className="text-gray-500 text-xl cursor-move" />
-
-            {/* Field Label */}
-            <div className="flex-1 relative">
+          <div key={i} className={"flex items-center gap-2 px-2 py-1.5 "}>
+            {/* MAIN CONTENT */}
+            <div className="flex-1 relative ">
               {i === 0 ? (
-                /* FIRST ROW = DROPDOWN */
-                <select
-                  className="w-full bg-transparent outline-none text-gray-700 text-sm 
-                             cursor-pointer appearance-none pr-6"
-                  defaultValue={f.label}
-                >
-                  <option value="Select Field" disabled>
-                    Select Field
-                  </option>
-                  <option>Project</option>
-                  <option>Status</option>
-                  <option>Summary</option>
-                  <option>Assignee</option>
-                  <option>Contain Text...</option>
-                </select>
-              ) : (
-                /* OTHER ROWS = READONLY INPUT (UNCHANGED) */
-                <input
-                  type="text"
-                  readOnly
-                  placeholder="Select Field"
-                  value={f.label}
-                  className="w-full bg-transparent outline-none text-gray-700 text-sm"
-                />
-              )}
+                /* ============= FIRST ROW = DROPDOWN ============= */
+                <div className="relative w-full ">
+                  <RxDragHandleDots2 className="text-gray-600 text-xl cursor-move absolute inset-y-0 left-[12px] my-auto" />
 
-              {/* Dropdown arrow ONLY for first item */}
-              {i === 0 && (
-                <FiChevronDown className="absolute right-1 top-1/2 -translate-y-1/2 text-gray-600 pointer-events-none" />
+                  <select
+                    defaultValue={f.label}
+                    className="
+                      w-full bg-blue-50 text-gray-700 text-sm rounded-md
+                      border border-gray-300 pl-9 pr-8 py-2
+                      appearance-none cursor-pointer
+                      shadow-sm hover:bg-gray-50
+                      focus:outline-none focus:ring-2 focus:ring-blue-500
+                      transition-all
+                      
+                    "
+                  >
+                    <option value="Select Field" disabled>
+                      Select Field
+                    </option>
+                    <option>Project</option>
+                    <option>Status</option>
+                    <option>Summary</option>
+                    <option>Assignee</option>
+                    <option>Contain Text...</option>
+                  </select>
+
+                  {/* Dropdown icon */}
+                  <FiChevronDown
+                    className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-600 pointer-events-none"
+                    size={18}
+                  />
+                </div>
+              ) : (
+                /* ================= OTHER ROWS = READONLY BOX ================= */
+
+                <div
+                  className="
+                    w-full bg-gray-100 text-gray-700 text-sm rounded-md
+                    border border-gray-300 px-3 py-2 cursor-default select-none flex gap-1
+                  "
+                >
+                  <RxDragHandleDots2 className="text-gray-600 text-xl cursor-move" />
+                  {f.label}
+                </div>
               )}
             </div>
 
-            {/* Edit icon for all except 1st */}
+            {/* EDIT ICON (except first row) */}
             {i !== 0 && (
-              <FiEdit2 className="text-blue-600 cursor-pointer" size={16} />
+              <FiEdit2 size={16} className="text-blue-600 cursor-pointer" />
             )}
 
-            {/* Delete Icon */}
-            {i === 0 && (
-              <FiTrash2 className="text-red-500 cursor-pointer" size={18} />
-            )}
-            {i !== 0 && (
-              <FiTrash2 className="text-black cursor-pointer" size={18} />
+            {/* DELETE ICON (red for first, black for others) */}
+            {i === 0 ? (
+              <FiTrash2 size={18} className="text-red-500 cursor-pointer" />
+            ) : (
+              <FiTrash2 size={18} className="text-gray-700 cursor-pointer" />
             )}
           </div>
         ))}
@@ -98,7 +105,7 @@ export default function FieldBuilderSection() {
 
       <hr className="my-2 text-gray-200" />
 
-      {/* Add Another Field */}
+      {/* BOTTOM ACTION BAR */}
       <div className="flex justify-between items-center text-md">
         <button className="cursor-pointer flex items-center gap-1">
           + Add Another Field
