@@ -146,7 +146,7 @@ const DashboardConfig = () => {
         </div>
       </div>
 
-      <div className="bg-white p-4 rounded">
+      <div className="bg-white p-4 px-0 rounded">
         {gadgets
           .filter((gadget) => gadget && typeof gadget === "object")
           .map((gadget) => (

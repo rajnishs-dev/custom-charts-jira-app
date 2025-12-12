@@ -80,7 +80,7 @@ const SettingTabContent = () => {
 
   return (
     <>
-      <div className="pb-3 mb-3 border-b border-gray-400">
+      <div className="pb-3 mb-3 border-b border-gray-300">
         <h5 className="font-semibold text-black mb-2">Dashboard Title</h5>
         <input
           type="text"
@@ -114,7 +114,7 @@ const SettingTabContent = () => {
           className="
         flex items-center justify-end space-x-1.5 
         text-blue-600 hover:text-blue-800 
-        font-medium border-t border-gray-400
+        font-medium border-t border-gray-300
         transition-colors duration-200 
         py-4 pb-0
       "

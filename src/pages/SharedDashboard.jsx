@@ -2,7 +2,6 @@ import CustomHeader from "../components/CustomHeader";
 import DashboardConfig from "../components/DashboardConfig";
 import DashboardSettings from "../components/DashboardSettings";
 import {
-  ImportExportContent,
   PlaceholderContent,
 } from "../components/ContentComponents";
 import {
@@ -15,6 +14,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import SettingTabContent from "../components/SettingTabContent";
 import SaveGadget from "../components/SaveGadget";
 import { DescriptionsTabContent } from "../components/DescriptionTabContent";
+import { ImportExportTabContent } from "../components/ImportExportTabContent";
 
 export default function SharedDashboard() {
   const TAB_LIST = [
@@ -28,7 +28,7 @@ export default function SharedDashboard() {
   const TAB_CONTENTS = {
     settings: <SettingTabContent />,
     descriptions: <DescriptionsTabContent />,
-    import_export: <ImportExportContent />,
+    import_export: <ImportExportTabContent />,
     monitor: <PlaceholderContent tabName="Monitor View" />,
     help: <PlaceholderContent tabName="Help" />,
   };
@@ -37,11 +37,11 @@ export default function SharedDashboard() {
     <>
       <CustomHeader title="Custom Charts Shared Dashboard" />
       <div className="flex flex-wrap">
-        <div className="w-full md:w-2/3 md:pr-4">
+        <div className="w-full lg:w-2/3 md:w-1/2 md:pr-4">
           <DashboardConfig />
         </div>
 
-        <div className="w-full md:w-1/3">
+        <div className="w-full lg:w-1/3 md:w-1/2">
           <div className="my-4">
             <DashboardSettings tabs={TAB_LIST} contents={TAB_CONTENTS} />
           </div>
