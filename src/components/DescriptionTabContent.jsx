@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TabAccordion from "./TabAccordion";
 import ToggleSwitch from "./ToggleSwitch";
+import { FaUserCog } from "react-icons/fa";
 
 export const DescriptionsTabContent = () => {
 
@@ -51,6 +52,7 @@ export const DescriptionsTabContent = () => {
   ];
 
   return (
+    <>
     <div className="">
       <div className="h-48 border border-gray-300 p-2 rounded mb-4">
         <p className="text-gray-500">
@@ -60,5 +62,23 @@ export const DescriptionsTabContent = () => {
 
       <TabAccordion items={descriptionOption} />
     </div>
+ <div className="mt-4">
+        <a
+          href="/"
+          className="
+        flex items-center justify-end space-x-1.5 
+        text-blue-600 hover:text-blue-800 
+        font-medium border-t border-gray-300
+        transition-colors duration-200 
+        py-4 pb-0
+      "
+        >
+          <FaUserCog className="w-5 h-5" />
+
+          <span>Admin Setting</span>
+        </a>
+      </div>
+    </>
+    
   );
 };

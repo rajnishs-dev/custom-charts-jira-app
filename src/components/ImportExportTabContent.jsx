@@ -2,6 +2,7 @@ import { FiCopy } from "react-icons/fi";
 import {
   BsDownload,
 } from "react-icons/bs";
+import { FaUserCog } from "react-icons/fa";
 
 export const ImportExportTabContent = () => {
   return <>
@@ -30,5 +31,21 @@ export const ImportExportTabContent = () => {
         </div>
     </div>
   </div>
+   <div className="mt-4">
+        <a
+          href="/"
+          className="
+        flex items-center justify-end space-x-1.5 
+        text-blue-600 hover:text-blue-800 
+        font-medium border-t border-gray-300
+        transition-colors duration-200 
+        py-4 pb-0
+      "
+        >
+          <FaUserCog className="w-5 h-5" />
+
+          <span>Admin Setting</span>
+        </a>
+      </div>
   </>;
 };
