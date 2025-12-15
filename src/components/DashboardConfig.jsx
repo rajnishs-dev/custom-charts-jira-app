@@ -90,7 +90,7 @@ const Gadget = ({ gadget, chartOptions, onSelect, onDelete }) => {
 
       <button
         onClick={() => onDelete(gadget.id)}
-        className="p-2 rounded hover:bg-red-50 text-gray-400 hover:text-red-600 transition-colors"
+        className="p-2 rounded hover:bg-red-50 text-gray-400 hover:text-red-600 transition-colors cursor-pointer"
         title="Delete Gadget"
       >
         <AiOutlineDelete className="h-5 w-5 cursor-pointer" />

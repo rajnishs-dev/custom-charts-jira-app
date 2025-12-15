@@ -108,7 +108,7 @@ export default function FieldBuilderSection() {
               //   <FiTrash2 size={18} className="text-gray-700 cursor-pointer" />
               <button
                 onClick={() => onDelete(gadget.id)}
-                className="p-2 rounded hover:bg-red-50 text-gray-400 hover:text-red-600 transition-colors"
+                className="p-2 rounded hover:bg-red-50 text-gray-400 hover:text-red-600 transition-colors cursor-pointer"
                 title="Delete Gadget"
               >
                 <AiOutlineDelete className="h-5 w-5 cursor-pointer" />
