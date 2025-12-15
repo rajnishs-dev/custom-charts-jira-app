@@ -13,7 +13,7 @@ const TabAccordion = ({ items }) => {
       {items.map((item, index) => (
         <div key={index} className="border border-gray-300 rounded-md">
           <button
-            className="w-full flex justify-between items-center p-2 px-3 text-left"
+            className="w-full flex justify-between items-center p-2 px-3 text-left cursor-pointer"
             onClick={() => toggle(index)}
           >
             <span className="font-semibold text-black">{item.title}</span>
