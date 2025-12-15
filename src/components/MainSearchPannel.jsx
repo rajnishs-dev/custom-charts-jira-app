@@ -1,12 +1,10 @@
 import React from "react";
-import { BiGridVertical } from "react-icons/bi";
 import { FiEdit2 } from "react-icons/fi";
 import { AiOutlinePlus, AiOutlineDown } from "react-icons/ai";
 import { FiFilter, FiMoreVertical, FiFolder, FiEye } from "react-icons/fi";
-import { AiOutlineInfoCircle } from "react-icons/ai";
-import { MdGridView } from "react-icons/md";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { BsShare, BsQuestionCircle } from "react-icons/bs";
+import { BsSortDown } from "react-icons/bs";
 
 function MainSearchPannel() {
   return (
@@ -40,7 +38,7 @@ function MainSearchPannel() {
 
             {/* Sort Button */}
             <button className="border p-2 rounded-xs hover:bg-gray-100 border-gray-300 bg-gray-100">
-              <AiOutlineDown size={18} />
+              <BsSortDown size={18} />
             </button>
 
             {/* Add Button */}
