@@ -3,6 +3,7 @@ import { FiTrash2, FiEdit2, FiChevronDown } from "react-icons/fi";
 import { RxDragHandleDots2 } from "react-icons/rx";
 import { FaUserCog } from "react-icons/fa";
 import { BiGridVertical } from "react-icons/bi";
+import { AiOutlineDelete } from "react-icons/ai";
 
 export default function FieldBuilderSection() {
   const fields = [
@@ -95,9 +96,23 @@ export default function FieldBuilderSection() {
 
             {/* DELETE ICON (red for first, black for others) */}
             {i === 0 ? (
-              <FiTrash2 size={18} className="text-red-500 cursor-pointer" />
+              //   <FiTrash2 size={18} className="text-red-500 cursor-pointer" />
+              <button
+                onClick={() => onDelete(gadget.id)}
+                className="p-2 rounded hover:bg-red-50 text-red-600 transition-colors"
+                title="Delete Gadget"
+              >
+                <AiOutlineDelete className="h-5 w-5 cursor-pointer" />
+              </button>
             ) : (
-              <FiTrash2 size={18} className="text-gray-700 cursor-pointer" />
+              //   <FiTrash2 size={18} className="text-gray-700 cursor-pointer" />
+              <button
+                onClick={() => onDelete(gadget.id)}
+                className="p-2 rounded hover:bg-red-50 text-gray-400 hover:text-red-600 transition-colors"
+                title="Delete Gadget"
+              >
+                <AiOutlineDelete className="h-5 w-5 cursor-pointer" />
+              </button>
             )}
           </div>
         ))}
