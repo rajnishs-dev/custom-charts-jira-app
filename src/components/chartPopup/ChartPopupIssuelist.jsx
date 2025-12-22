@@ -20,7 +20,6 @@ export default function ChartPopupIssuelist() {
               icon={CirclePlus}
               title="Create New Issue List"
               subtitle="Jump straight in and create your Issue List"
-              filled={true}
             />
             <div className="flex items-center gap-1 text-orange-500 text-sm">
             <AlertTriangle className="w-4 h-4" strokeWidth={2} />

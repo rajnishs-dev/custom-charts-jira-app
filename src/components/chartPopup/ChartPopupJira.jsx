@@ -20,7 +20,6 @@ export default function ChartPopupJira() {
               icon={LoaderCircle}
               title="Use Existing Template"
               subtitle="See examples & pick from our library of templates"
-              filled={true}
             />
 
             <ChartOptionCard
@@ -57,7 +56,6 @@ export default function ChartPopupJira() {
               icon={LayoutPanelLeft}
               title="Learn how to use Custom Charts"
               subtitle="Unsure what to do? Take this tour and we can help show you"
-              filled={true}
             />
           </div>
         </div>
